@@ -793,88 +793,112 @@ footer{padding:28px 48px;border-top:1px solid var(--border);display:flex;align-i
     <div class="eyebrow">Pricing</div>
     <h2 class="section-title">Start free.<br><em>Scale when you're ready.</em></h2>
     <p class="section-sub">No contracts. Cancel anytime. All prices in USD. Founding members lock in 40% off Pro forever. The Agency tier is on the roadmap — register your interest now to be first in.</p>
-    <div class="pricing-grid" style="grid-template-columns:repeat(4,1fr)">
+
+    <!-- 2x2 PRICING GRID -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
 
       <!-- Free -->
       <div class="price-card">
-        <div class="plan-name">Free</div>
-        <div class="plan-price-wrap"><span class="plan-currency">$</span><span class="plan-price">0</span><span class="plan-period">/month</span></div>
-        <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--subtle);letter-spacing:1px;margin-bottom:12px">USD · billed monthly</div>
-        <p class="plan-desc">Try QA Copilot on a real project. No credit card required.</p>
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:20px">
+          <div>
+            <div class="plan-name">Free</div>
+            <div class="plan-price-wrap"><span class="plan-currency">$</span><span class="plan-price">0</span><span class="plan-period">/month</span></div>
+            <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--subtle);letter-spacing:1px;margin-top:4px">USD · billed monthly</div>
+          </div>
+          <div style="text-align:right;max-width:220px">
+            <p style="font-size:13px;color:var(--muted);line-height:1.6">Try QA Copilot on a real project. No credit card required.</p>
+          </div>
+        </div>
         <div class="plan-div"></div>
-        <ul class="plan-features">
-          <li>3 strategy generations/month</li>
-          <li>3 test case generations/month</li>
-          <li>PDF export</li>
-          <li>Last 3 documents saved</li>
-          <li class="dim">Word (.docx) export</li>
-          <li class="dim">Jira integration</li>
-          <li class="dim">Share via link</li>
-          <li class="dim">Team workspace</li>
-        </ul>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:24px">
+          <div style="font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--accent);font-size:11px">✓</span>3 strategy generations/mo</div>
+          <div style="font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--accent);font-size:11px">✓</span>3 test case generations/mo</div>
+          <div style="font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--accent);font-size:11px">✓</span>PDF export</div>
+          <div style="font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--accent);font-size:11px">✓</span>Last 3 documents saved</div>
+          <div style="font-size:12px;color:var(--subtle);display:flex;align-items:center;gap:6px"><span style="font-size:11px">–</span>Word export</div>
+          <div style="font-size:12px;color:var(--subtle);display:flex;align-items:center;gap:6px"><span style="font-size:11px">–</span>Jira integration</div>
+          <div style="font-size:12px;color:var(--subtle);display:flex;align-items:center;gap:6px"><span style="font-size:11px">–</span>Share via link</div>
+          <div style="font-size:12px;color:var(--subtle);display:flex;align-items:center;gap:6px"><span style="font-size:11px">–</span>Team workspace</div>
+        </div>
         <button class="plan-btn btn-outline" onclick="window.open('https://qa-copilot.kit.com/f8e0a3660e','_blank')">Join waitlist →</button>
       </div>
 
       <!-- Pro -->
       <div class="price-card featured">
-        <div class="plan-name">Pro</div>
-        <div class="plan-price-wrap"><span class="plan-currency">$</span><span class="plan-price">29</span><span class="plan-period">/month</span></div>
-        <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--accent);letter-spacing:1px;margin-bottom:12px">USD · billed monthly</div>
-        <p class="plan-desc">Everything you need for end-to-end QA planning — for yourself or your clients.</p>
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:20px">
+          <div>
+            <div class="plan-name">Pro</div>
+            <div class="plan-price-wrap"><span class="plan-currency">$</span><span class="plan-price">29</span><span class="plan-period">/month</span></div>
+            <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--accent);letter-spacing:1px;margin-top:4px">USD · billed monthly</div>
+          </div>
+          <div style="text-align:right;max-width:220px">
+            <p style="font-size:13px;color:var(--muted);line-height:1.6">Everything for end-to-end QA planning — for yourself or your clients.</p>
+          </div>
+        </div>
         <div class="plan-div"></div>
-        <ul class="plan-features">
-          <li>Unlimited strategy generations</li>
-          <li>Unlimited test case generations</li>
-          <li>PDF + Word (.docx) export</li>
-          <li>Unlimited document history</li>
-          <li>Regenerate individual sections</li>
-          <li>File uploads — mockups, TDD, BDD</li>
-          <li>Share via link (read-only)</li>
-          <li>Jira integration <span style="font-size:10px;font-family:'DM Mono',monospace;color:var(--accent);margin-left:4px">coming soon</span></li>
-        </ul>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:24px">
+          <div style="font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--accent);font-size:11px">✓</span>Unlimited strategies</div>
+          <div style="font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--accent);font-size:11px">✓</span>Unlimited test cases</div>
+          <div style="font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--accent);font-size:11px">✓</span>PDF + Word export</div>
+          <div style="font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--accent);font-size:11px">✓</span>Unlimited history</div>
+          <div style="font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--accent);font-size:11px">✓</span>File uploads</div>
+          <div style="font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--accent);font-size:11px">✓</span>Share via link</div>
+          <div style="font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--accent);font-size:11px">✓</span>Regenerate sections</div>
+          <div style="font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--accent);font-size:11px">✓</span>Jira integration <span style="font-family:'DM Mono',monospace;font-size:9px;color:var(--accent);margin-left:2px">soon</span></div>
+        </div>
         <button class="plan-btn btn-filled" onclick="window.open('https://qa-copilot.kit.com/f8e0a3660e','_blank')">Join waitlist — lock in $17/mo →</button>
       </div>
 
       <!-- Team -->
       <div class="price-card">
-        <div class="plan-name">Team</div>
-        <div class="plan-price-wrap"><span class="plan-currency">$</span><span class="plan-price">79</span><span class="plan-period">/month</span></div>
-        <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--subtle);letter-spacing:1px;margin-bottom:12px">USD · billed monthly</div>
-        <p class="plan-desc">For QA teams and consulting firms who need consistency across every project.</p>
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:20px">
+          <div>
+            <div class="plan-name">Team</div>
+            <div class="plan-price-wrap"><span class="plan-currency">$</span><span class="plan-price">79</span><span class="plan-period">/month</span></div>
+            <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--subtle);letter-spacing:1px;margin-top:4px">USD · billed monthly</div>
+          </div>
+          <div style="text-align:right;max-width:220px">
+            <p style="font-size:13px;color:var(--muted);line-height:1.6">For QA teams and consulting firms who need consistency across every project.</p>
+          </div>
+        </div>
         <div class="plan-div"></div>
-        <ul class="plan-features">
-          <li>Everything in Pro</li>
-          <li>5 team seats included</li>
-          <li>Shared workspace + history</li>
-          <li>See who generated what</li>
-          <li>Priority support</li>
-          <li>+$12/seat beyond 5</li>
-          <li>Team Jira integration <span style="font-size:10px;font-family:'DM Mono',monospace;color:var(--accent);margin-left:4px">coming soon</span></li>
-          <li class="dim">White-label export <span style="font-size:10px;font-family:'DM Mono',monospace;color:var(--subtle);margin-left:4px">agency tier</span></li>
-        </ul>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:24px">
+          <div style="font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--accent);font-size:11px">✓</span>Everything in Pro</div>
+          <div style="font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--accent);font-size:11px">✓</span>5 team seats included</div>
+          <div style="font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--accent);font-size:11px">✓</span>Shared workspace</div>
+          <div style="font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--accent);font-size:11px">✓</span>See who generated what</div>
+          <div style="font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--accent);font-size:11px">✓</span>Priority support</div>
+          <div style="font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--accent);font-size:11px">✓</span>+$12/seat beyond 5</div>
+          <div style="font-size:12px;color:var(--muted);display:flex;align-items:center;gap:6px"><span style="color:var(--accent);font-size:11px">✓</span>Team Jira <span style="font-family:'DM Mono',monospace;font-size:9px;color:var(--accent);margin-left:2px">soon</span></div>
+          <div style="font-size:12px;color:var(--subtle);display:flex;align-items:center;gap:6px"><span style="font-size:11px">–</span>White-label <span style="font-family:'DM Mono',monospace;font-size:9px;color:var(--subtle);margin-left:2px">agency</span></div>
+        </div>
         <button class="plan-btn btn-dark" onclick="window.open('https://qa-copilot.kit.com/f8e0a3660e','_blank')">Join waitlist →</button>
       </div>
 
       <!-- Agency -->
       <div class="price-card" style="border:1.5px dashed var(--border2);opacity:0.72;position:relative;overflow:hidden">
         <div style="position:absolute;top:14px;right:14px;font-family:'DM Mono',monospace;font-size:9px;background:var(--surface3);color:var(--subtle);padding:3px 8px;border-radius:4px;letter-spacing:0.5px">2027 roadmap</div>
-        <div class="plan-name" style="color:var(--subtle)">Agency</div>
-        <div class="plan-price-wrap"><span class="plan-currency" style="color:var(--subtle)">$</span><span class="plan-price" style="color:var(--subtle)">299</span><span class="plan-period">/month</span></div>
-        <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--subtle);letter-spacing:1px;margin-bottom:12px;opacity:0.6">USD · billed monthly</div>
-        <p class="plan-desc">For organisations and agencies who need the whole company covered — unlimited users, enterprise compliance, and white-label output.</p>
+        <div style="display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:20px">
+          <div>
+            <div class="plan-name" style="color:var(--subtle)">Agency</div>
+            <div class="plan-price-wrap"><span class="plan-currency" style="color:var(--subtle)">$</span><span class="plan-price" style="color:var(--subtle)">299</span><span class="plan-period">/month</span></div>
+            <div style="font-family:'DM Mono',monospace;font-size:10px;color:var(--subtle);letter-spacing:1px;margin-top:4px;opacity:0.6">USD · billed monthly</div>
+          </div>
+          <div style="text-align:right;max-width:220px">
+            <p style="font-size:13px;color:var(--muted);line-height:1.6">Whole organisation covered — unlimited users, enterprise compliance, white-label output.</p>
+          </div>
+        </div>
         <div class="plan-div"></div>
-        <ul class="plan-features" style="opacity:0.6">
-          <li>Everything in Team</li>
-          <li>Unlimited users — whole organisation</li>
-          <li>3,000 generations/month included</li>
-          <li>Overage at $0.15/generation</li>
-          <li>White-label + custom branding</li>
-          <li>Data processing agreement (DPA)</li>
-          <li>Dedicated onboarding call</li>
-          <li>Dedicated support contact</li>
-          <li>SSO / SAML <span style="font-size:10px;font-family:'DM Mono',monospace;color:var(--subtle);margin-left:4px">roadmap</span></li>
-          <li>Annual billing option available</li>
-        </ul>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:24px;opacity:0.6">
+          <div style="font-size:12px;color:var(--subtle);display:flex;align-items:center;gap:6px"><span style="font-size:11px">–</span>Everything in Team</div>
+          <div style="font-size:12px;color:var(--subtle);display:flex;align-items:center;gap:6px"><span style="font-size:11px">–</span>Unlimited users</div>
+          <div style="font-size:12px;color:var(--subtle);display:flex;align-items:center;gap:6px"><span style="font-size:11px">–</span>3,000 generations/mo</div>
+          <div style="font-size:12px;color:var(--subtle);display:flex;align-items:center;gap:6px"><span style="font-size:11px">–</span>White-label branding</div>
+          <div style="font-size:12px;color:var(--subtle);display:flex;align-items:center;gap:6px"><span style="font-size:11px">–</span>Data processing (DPA)</div>
+          <div style="font-size:12px;color:var(--subtle);display:flex;align-items:center;gap:6px"><span style="font-size:11px">–</span>Dedicated onboarding</div>
+          <div style="font-size:12px;color:var(--subtle);display:flex;align-items:center;gap:6px"><span style="font-size:11px">–</span>SSO / SAML</div>
+          <div style="font-size:12px;color:var(--subtle);display:flex;align-items:center;gap:6px"><span style="font-size:11px">–</span>Annual billing</div>
+        </div>
         <button class="plan-btn" style="background:var(--surface2);color:var(--muted);border:1px solid var(--border2);cursor:pointer" onclick="window.open('https://qa-copilot.kit.com/f8e0a3660e','_blank')">Register interest →</button>
         <p style="font-size:11px;color:var(--subtle);text-align:center;margin-top:10px;line-height:1.5">Not available yet. Join the waitlist and tell us you're interested in Agency — we'll reach out when it's ready.</p>
       </div>
@@ -910,16 +934,11 @@ footer{padding:28px 48px;border-top:1px solid var(--border);display:flex;align-i
     <a href="#">Privacy Policy</a>
     <a href="#">Terms of Service</a>
     <a href="#roadmap">Roadmap</a>
-    <a href="mailto:info@qacopilot.co">Contact</a>
+    <a href="/cdn-cgi/l/email-protection#51383f373e112030323e21383d3e257f323e">Contact</a>
   </div>
   <div>© 2026 QA Copilot Inc. All rights reserved.</div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function switchTab(idx) {
-  document.querySelectorAll('.ptab').forEach(function(t,i){ t.classList.toggle('active', i===idx); });
-  document.querySelectorAll('.persona-panel').forEach(function(p,i){ p.classList.toggle('active', i===idx); });
-}
-</script>
-</body>
-</html>
+  document.querySelectorAll('.ptab').forEach(function(t,i){ t.classList.toggle('active', i===i
