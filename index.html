@@ -934,11 +934,17 @@ footer{padding:28px 48px;border-top:1px solid var(--border);display:flex;align-i
     <a href="#">Privacy Policy</a>
     <a href="#">Terms of Service</a>
     <a href="#roadmap">Roadmap</a>
-    <a href="/cdn-cgi/l/email-protection#51383f373e112030323e21383d3e257f323e">Contact</a>
+    <a href="mailto:info@qacopilot.co">Contact</a>
   </div>
   <div>© 2026 QA Copilot Inc. All rights reserved.</div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+
+<script>
 function switchTab(idx) {
-  document.querySelectorAll('.ptab').forEach(function(t,i){ t.classList.toggle('active', i===i
+  document.querySelectorAll('.ptab').forEach(function(t,i){ t.classList.toggle('active', i===idx); });
+  document.querySelectorAll('.persona-panel').forEach(function(p,i){ p.classList.toggle('active', i===idx); });
+}
+</script>
+</body>
+</html>
